@@ -1,0 +1,57 @@
+{
+  "name": "@jugar/debounce-throttle",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "publish": "npm publish --access public",
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm version patch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "description": "Debouncing and throttling toolkits.",
+  "dependencies": {
+    "postcss": "^8.4.33",
+    "esbuild": "^0.19.12",
+    "source-map-js": "^1.0.2",
+    "rollup": "^4.9.6",
+    "undici-types": "^5.26.5",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAMPUNG/debounce-throttle.git"
+  },
+  "keywords": [
+    "debounce",
+    "throttle"
+  ],
+  "author": "Maquia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SAMPUNG/debounce-throttle/issues"
+  },
+  "homepage": "https://github.com/SAMPUNG/debounce-throttle#readme"
+}
